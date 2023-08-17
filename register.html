@@ -3,49 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Website</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+
+    <title>Norwood Recreation Pickleball - Register</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to My Basic Website</h1>
+      <h1>Norwood Recreation Pickleball</h1>
+      <br />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="register.html" class="active">Register</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <div class="content">
-        <h1>Norwood Recreation Pickleball League</h1>
-        <h3>Hosted by Norwood Recreation Center</h3>
-        <img
-          href="https://www.norwood-ohio.com/ImageRepository/Document?documentID=583"
-        />
-        <a href="https://www.facebook.com/NorwoodRecreationDepartment"
-          ><p>Visit the Norwood Recreation Facebook Page</p></a
-        >
-
-        <h4>Registration is now open to join Fall 2023 League</h4>
-        <p>
-          Season starts September 13th and runs for six consecutive Wednesdays
-          through October 18th. More informatin to come soon.
-        </p>
-        <p>
-          There are two steps to register: First, fill out the form below, and
-          secondly, please visit the Norwood Recreation Center to pay your $25
-          league fee.
-        </p>
-        <br /><br />
+      <section class="registration-form">
         <iframe
-          width="900"
-          height="1000px"
-          src="https://forms.office.com/r/4X7VZFAagt?embed=true"
+          width="750px"
+          height="1100px"
+          src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAACcsWU1UOFI1MU82MTJQN0ZLSzZWQzNOTVdaTVc1Vi4u&embed=true"
           frameborder="0"
           marginwidth="0"
           marginheight="0"
@@ -56,13 +38,11 @@
           msallowfullscreen
         >
         </iframe>
-      </div>
+      </section>
     </main>
 
     <footer>
-      <p>
-        &copy; 2023 Norwood Recreation Pickleball League. All rights reserved.
-      </p>
+      <p>&copy; 2023 Norwood Recreation Pickleball. All rights reserved.</p>
     </footer>
   </body>
 </html>

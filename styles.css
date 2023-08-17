@@ -1,36 +1,31 @@
-/* Reset some default styles */
+/* Reset some default browser styles */
 body,
 h1,
 h2,
-p {
+p,
+ul {
   margin: 0;
   padding: 0;
 }
 
-/* Basic styling */
+/* Set a background color and text color */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
+/* Center the header and navigation */
 header {
-  background: #333;
-  color: #fff;
   text-align: center;
-  padding: 1em;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
 nav ul {
   list-style: none;
-  background: #333;
-  text-align: center;
-  padding: 0.5em;
+  padding: 0;
 }
 
 nav ul li {
@@ -43,17 +38,62 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Center the main content */
 main {
-  padding: 20px;
-}
-
-.content {
-  margin: 20px 0;
-}
-
-footer {
-  background: #333;
-  color: #fff;
   text-align: center;
-  padding: 1em;
+  padding: 40px;
+}
+
+/* Center the footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style for specific sections */
+.hero {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.registration-form,
+.faq-list,
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+  max-width: 400px; /* Adjust this value to your preference */
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px; /* Adjust this font size as needed */
+  line-height: 1.5;
+}
+
+.show-answer {
+  display: block;
+}
+
+/* Change color when hovering over navigation links */
+nav ul li a:hover {
+  color: #3d70bb; /* Change to your desired hover color */
+}
+
+/* Change color for active link */
+nav ul li a.active {
+  color: #3d70bb; /* Change to your desired active color */
 }
