@@ -3,7 +3,8 @@ body,
 h1,
 h2,
 p,
-ul {
+ul,
+table {
   margin: 0;
   padding: 0;
 }
@@ -38,6 +39,15 @@ nav ul li a {
   text-decoration: none;
 }
 
+table,
+thead,
+tbody,
+tr,
+td {
+  text-align: center;
+  padding: 40px;
+}
+
 /* Center the main content */
 main {
   text-align: center;
@@ -54,21 +64,30 @@ footer {
 
 /* Style for specific sections */
 .hero {
+  max-width: 800px; /* Adjust this value to your preference */
+  margin: 0 auto;
   background-color: #f9f9f9;
   padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .registration-form,
 .faq-list,
-.contact-form {
-  background-color: #fff;
+.contact-form,
+.schedule {
+  max-width: 800px; /* Adjust this value to your preference */
+  margin: 0 auto;
+  background-color: #f9f9f9;
   padding: 40px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .faq-item {
-  max-width: 400px; /* Adjust this value to your preference */
+  max-width: 600px; /* Adjust this value to your preference */
   margin: 0 auto;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -96,4 +115,69 @@ nav ul li a:hover {
 /* Change color for active link */
 nav ul li a.active {
   color: #3d70bb; /* Change to your desired active color */
+}
+
+.schedule-row {
+  cursor: pointer;
+}
+
+.toggle-button {
+  background-color: #ddd;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.match-details {
+  display: none;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.show-details {
+  display: block;
+}
+
+/* styles.css */
+
+/* ... previous styles ... */
+
+.contact {
+  text-align: center; /* Add this line to left-align the content */
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 25%;
+}
+
+.contact-info li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.contact-info li strong {
+  text-align: left;
+  display: inline-block;
+  width: 120px; /* Adjust as needed for alignment */
+  font-weight: bold;
+}
+
+.contact-info a {
+  text-align: left;
+  text-decoration: none;
+  color: #007bff;
 }

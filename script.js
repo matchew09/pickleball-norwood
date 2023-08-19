@@ -12,3 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButtons = document.querySelectorAll(".toggle-button");
+
+  toggleButtons.forEach((button) => {
+    const matchDetails = button.nextElementSibling;
+
+    button.addEventListener("click", () => {
+      matchDetails.classList.toggle("show-details");
+    });
+  });
+});
