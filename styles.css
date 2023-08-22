@@ -109,12 +109,12 @@ footer {
 
 /* Change color when hovering over navigation links */
 nav ul li a:hover {
-  color: #3d70bb; /* Change to your desired hover color */
+  color: #d3c612; /* Change to your desired hover color */
 }
 
 /* Change color for active link */
 nav ul li a.active {
-  color: #3d70bb; /* Change to your desired active color */
+  color: #d3c612; /* Change to your desired active color */
 }
 
 .schedule-row {
@@ -176,3 +176,30 @@ nav ul li a.active {
     display: inline;
   }
 }
+
+header {
+  background-image: url("/assets/pickleball-banner.svg");
+  background-size: cover; /* Scale the image to cover the navigation area */
+  background-position: right; /* Center the image within the navigation area */
+  padding: 30px; /* Add padding to create space around the navigation content */
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 10px; /* Add spacing between navigation items */
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff; /* Text color for navigation links */
+  font-weight: bold;
+}
+
+/* ... rest of the styles ... */
