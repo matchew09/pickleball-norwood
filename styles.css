@@ -146,38 +146,33 @@ nav ul li a.active {
 
 /* ... previous styles ... */
 
-.contact {
-  text-align: center; /* Add this line to left-align the content */
-  margin: 40px auto;
-  max-width: 800px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .contact-info {
-  text-align: left;
   list-style: none;
   padding: 0;
   margin-top: 20px;
-  margin-left: 25%;
 }
 
 .contact-info li {
-  text-align: left;
   margin-bottom: 10px;
 }
 
 .contact-info li strong {
-  text-align: left;
   display: inline-block;
   width: 120px; /* Adjust as needed for alignment */
   font-weight: bold;
 }
 
 .contact-info a {
-  text-align: left;
   text-decoration: none;
   color: #007bff;
+}
+
+@media (max-width: 750px) {
+  .desktop-link {
+    display: none;
+  }
+
+  .mobile-link {
+    display: inline;
+  }
 }
