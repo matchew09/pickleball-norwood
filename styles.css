@@ -16,12 +16,36 @@ body {
   color: #333;
 }
 
+/* Navigation Banner */
 /* Center the header and navigation */
+
 header {
+  background-image: url("/assets/pickleball-banner.svg");
+  background-size: cover; /* Scale the image to cover the navigation area */
+  background-position: right; /* Center the image within the navigation area */
+  padding: 30px; /* Add padding to create space around the navigation content */
   text-align: center;
   padding: 20px;
   background-color: #333;
   color: #fff;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 10px; /* Add spacing between navigation items */
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff; /* Text color for navigation links */
+  font-weight: bold;
 }
 
 nav ul {
@@ -37,6 +61,16 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Change color when hovering over navigation links */
+nav ul li a:hover {
+  color: #d3c612; /* Change to your desired hover color */
+}
+
+/* Change color for active link */
+nav ul li a.active {
+  color: #d3c612; /* Change to your desired active color */
 }
 
 table,
@@ -73,19 +107,6 @@ footer {
   text-align: center;
 }
 
-.registration-form,
-.faq-list,
-.contact-form,
-.schedule {
-  max-width: 800px; /* Adjust this value to your preference */
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
 .faq-item {
   max-width: 600px; /* Adjust this value to your preference */
   margin: 0 auto;
@@ -106,45 +127,6 @@ footer {
 .show-answer {
   display: block;
 }
-
-/* Change color when hovering over navigation links */
-nav ul li a:hover {
-  color: #d3c612; /* Change to your desired hover color */
-}
-
-/* Change color for active link */
-nav ul li a.active {
-  color: #d3c612; /* Change to your desired active color */
-}
-
-.schedule-row {
-  cursor: pointer;
-}
-
-.toggle-button {
-  background-color: #ddd;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.match-details {
-  display: none;
-  padding: 10px;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.show-details {
-  display: block;
-}
-
-/* styles.css */
-
-/* ... previous styles ... */
 
 .contact-info {
   list-style: none;
@@ -167,39 +149,8 @@ nav ul li a.active {
   color: #007bff;
 }
 
-@media (max-width: 750px) {
-  .desktop-link {
-    display: none;
-  }
-
-  .mobile-link {
-    display: inline;
-  }
+img#logo {
+  max-width: 300px;
+  margin: 0px;
+  padding: 0px;
 }
-
-header {
-  background-image: url("/assets/pickleball-banner.svg");
-  background-size: cover; /* Scale the image to cover the navigation area */
-  background-position: right; /* Center the image within the navigation area */
-  padding: 30px; /* Add padding to create space around the navigation content */
-}
-
-header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-header ul li {
-  display: inline-block;
-  margin: 0 10px; /* Add spacing between navigation items */
-}
-
-header ul li a {
-  text-decoration: none;
-  color: #fff; /* Text color for navigation links */
-  font-weight: bold;
-}
-
-/* ... rest of the styles ... */
