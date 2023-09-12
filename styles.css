@@ -78,8 +78,8 @@ thead,
 tbody,
 tr,
 td {
-  text-align: center;
-  padding: 40px;
+  text-align: left;
+  padding-right: 5px;
 }
 
 /* Center the main content */
@@ -105,6 +105,10 @@ footer {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.banner {
+  background-color: #d3c612;
 }
 
 .faq-item {
@@ -156,7 +160,7 @@ img#logo {
 }
 
 .hs-form-div {
-  max-width: 75%;
+  max-width: 60%;
   text-align: center;
   margin: 0 auto;
 }
